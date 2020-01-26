@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shape UP</title>
+  </head>
+
+  <body>
+    <div class="container" id="input">
+      <div class="row">
+        <div class="col m3">
+          <h5>Rectangle</h5>
+          <form id="rectangle-form">
+            <div class="input-field">
+              <label for="rec-width">Width</label>
+              <input type="text" name="" id="rec-width" />
+            </div>
+            <div class="input-field">
+              <label for="rec-height">Height</label>
+              <input type="text" name="" id="rec-height" />
+            </div>
+            <button type="submit" class="waves-effect waves-light btn">
+              <i class="material-icons left">add</i>Add
+            </button>
+          </form>
+        </div>
+        <div class="col m3">
+          <h5>Square</h5>
+          <form id="square-form">
+            <div class="input-field">
+              <label for="sq-width">Width</label>
+              <input type="text" name="" id="sq-width" />
+            </div>
+
+            <button type="submit" class="waves-effect waves-light btn">
+              <i class="material-icons left">add</i>Add
+            </button>
+          </form>
+        </div>
+        <div class="col m3">
+          <h5>Circle</h5>
+          <form id="circle-form">
+            <div class="input-field">
+              <label for="rec-width">Radius</label>
+              <input type="text" name="" id="radius" />
+            </div>
+            <button type="submit" class="waves-effect waves-light btn">
+              <i class="material-icons left">add</i>Add
+            </button>
+          </form>
+        </div>
+        <div class="col m3">
+          <h5>Triangle</h5>
+          <form id="triangle-form">
+            <div class="input-field">
+              <label for="tri-height">Height</label>
+              <input type="text" name="" id="tri-height" />
+            </div>
+            <button type="submit" class="waves-effect waves-light btn">
+              <i class="material-icons left">add</i>Add
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col s8 blue-grey lighten-5" id="canvas"></div>
+        <div class="col s4" id="info">
+          <div class="contanier">
+            <div class="row">
+              <div class="col s6"><p>Name:</p></div>
+              <div class="col s6">
+                <p id="info-name" class="information blue-grey-text"></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s6"><p>Height:</p></div>
+              <div class="col s6"><p id="info-height" class="information"></p></div>
+            </div>
+            <div class="row">
+              <div class="col s6"><p>Width:</p></div>
+              <div class="col s6"><p id="info-width" class="information"></p></div>
+            </div>
+            <div class="row">
+              <div class="col s6"><p>Area:</p></div>
+              <div class="col s6"><p id="info-area" class="information"></p></div>
+            </div>
+            <div class="row">
+              <div class="col s6"><p>Perimeter:</p></div>
+              <div class="col s6"><p id="info-perimeter" class="information"></p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

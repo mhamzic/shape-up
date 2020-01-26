@@ -1,0 +1,23 @@
+#canvas {
+  height: 400px;
+  position: relative;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.divider {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.shape {
+  position: absolute;
+  cursor: pointer;
+}
+
+#info {
+  margin-left: 0px;
+}
